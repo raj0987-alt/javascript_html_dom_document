@@ -24,14 +24,14 @@ docAncBtn.onclick = function () {
 
 var docAllAncBtn = document.getElementById("docAncAllBtn");
 
-docAllAncBtn.onclick = function(){
+docAllAncBtn.onclick = function () {
     let docAncNode = document.anchors;
 
     docAncBtnWrap.style.display = "none";
 
-    try{
-        for(let i = 0; i<= docAncNode.length; i++){
-            docAncInpStr += `<br><br><h6>Position ${i+1} valid href is: ${docAncNode[i].href}</h6>`
+    try {
+        for (let i = 0; i <= docAncNode.length; i++) {
+            docAncInpStr += `<br><br><h6>Position ${i + 1} valid href is: ${docAncNode[i].href}</h6>`
         }
     } catch (e) {
         docAncInpStr += "<br><br>" + e;
@@ -39,3 +39,22 @@ docAllAncBtn.onclick = function(){
     docAncOut.innerHTML = docAncInpStr;
 
 }
+
+//base uri start
+let baseUriBtn = document.getElementById("base-uri-btn");
+
+baseUriBtn.onclick = function () {
+    let baseUri = document.baseURI;
+    let baseURIShow = document.getElementById("base-uri");
+
+    try {
+        baseURIShow.innerHTML = `<span>The base URI is ${baseUri}</span>`
+
+    }
+    catch (e) {
+
+        baseURIShow.innerHTML = `<span>No result found</span>`
+    }
+}
+
+//base uri end

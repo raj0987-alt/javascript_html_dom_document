@@ -16,3 +16,31 @@ body{
 .dom-div{
 
 }
+
+.custom-card{
+    margin-bottom: 5px;
+    border: 30px solid white;
+    background-color: black;
+    color: white;
+
+
+}
+
+.card-title-custom{
+    font-size: 20px;
+    border: 2px solid rgb(246, 105, 17);
+    margin-top: 10px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.end-card{
+    color: white !important;
+    font-weight: 800;
+}
+
+.base-uri{
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+}
