@@ -58,3 +58,20 @@ baseUriBtn.onclick = function () {
 }
 
 //base uri end
+
+// document.body start
+
+function paraAppend() {
+
+    let paraID = document.getElementById("paraID");
+
+    const para = document.createElement("p");
+    const node = document.createTextNode("This is a paragraph.");
+
+
+    para.appendChild(node);
+    para.appendChild(para);
+    document.body.appendChild(para);
+
+}
+// document.body end
