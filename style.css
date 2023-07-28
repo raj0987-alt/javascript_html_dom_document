@@ -1,0 +1,18 @@
+.header{
+    background-color: rgb(48, 48, 113);
+    color: white;
+    text-align: center;
+
+    padding: 20px !important;
+    border-radius: 5px;
+}
+
+body{
+    background-color: black;
+    color: white;
+    margin: 10px;
+}
+
+.dom-div{
+
+}
